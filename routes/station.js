@@ -61,6 +61,7 @@ stationRouter.post('/create', routeGuard, (req, res, next) => {
 
 stationRouter.get('/list', (req, res, next) => {
   Station.find()
+    .populate('station creator')
     .then(stations => {
       //console.log(stations)
       res.render('station/list', { stations });
@@ -73,6 +74,7 @@ stationRouter.get('/list', (req, res, next) => {
 stationRouter.get('/:stationId', (req, res, next) => {
   const stationId = req.params.stationId;
   Station.findById(stationId)
+    .populate('station creator')
     .then(station => {
       res.render('station/single', { station });
     })

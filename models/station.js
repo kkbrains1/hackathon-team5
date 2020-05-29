@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 
 const stationSchema = new mongoose.Schema(
   {
+    transportType: {
+      type: String,
+      required: true
+    },
     name: {
       type: String,
       required: true
@@ -11,7 +15,7 @@ const stationSchema = new mongoose.Schema(
     address: {
       type: String
     },
-    stepFree: {
+    steps: {
       type: String
     },
     liftAvailable: {
@@ -21,6 +25,27 @@ const stationSchema = new mongoose.Schema(
       type: String
     },
     staffAvailable: {
+      type: String
+    },
+    motionAccessibility: {
+      type: String
+    },
+    signage: {
+      type: String
+    },
+    visual: {
+      type: String
+    },
+    hearing: {
+      type: String
+    },
+    language: {
+      type: String
+    },
+    cognitive: {
+      type: String
+    },
+    wiFi: {
       type: String
     },
     comments: {

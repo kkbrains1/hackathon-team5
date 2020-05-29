@@ -3,43 +3,91 @@
 </h1>
 
   <form method="POST" >
+    <label for="transport-type">Station Name</label>
+    <input required id="transport-type" type="text" name="transportType" placeholder="Transport type (required)">
+
     <label for="station-name">Station Name</label>
-    <input required id="station-name" type="text" name="name" placeholder="name of the station">
+    <input required id="station-name" type="text" name="name" placeholder="Station name (required)">
 
     <label for="station-address">Station Address</label>
-    <input required id="station-address" type="text" name="address" placeholder="Address of the station"></textarea>
+    <input required id="station-address" type="text" name="address" placeholder="Address of the station">
 
-
-    <labelfor="station-stepfree">Is this station step-free?</labelfor></label>
-      <select name="stepFree" id="station-stepfree">
-        <option value="">--Please choose an option--</option>
-        <option value = "Yes">Yes</option>
-        <option value = "No">No</option>
-    </select>
- 
-    <labelfor="station-lift">Is there a lift at this station?</labelfor></label>
+    <label for="station-lift">Does it have elevators?</label>
       <select name="liftAvailable" id="station-lift">
-        <option value="">--Please choose an option--</option>
+        <option value="">--elevators--</option>
         <option value = "Yes">Yes</option>
         <option value = "No">No</option>
     </select>
 
-    <labelfor="station-gap">Is there a big gap between the platform and the train?</labelfor></label>
+    <label for="station-gap">Train-Platform Gap</label>
       <select name="gap" id="station-gap">
-        <option value="">--Please choose an option--</option>
+        <option value="">--gap between train - platform--</option>
         <option value = "Yes">Yes</option>
         <option value = "No">No</option>
     </select>
 
-    <labelfor="station-staff">Is there staff at this station who can assist with special requirements?</labelfor></label>
+    <label for="station-staff">Available staff</label>
       <select name="staffAvailable" id="station-staff">
         <option value="">--Please choose an option--</option>
         <option value = "Yes">Yes</option>
         <option value = "No">No</option>
     </select>
 
+
+    <label for="station-steps">Number of steps</label>
+    <input required id="station-steps" type="number" name="steps" placeholder="nº of steps"></textarea>
+    
+        <label for="motion-accessibility">Motion Accessibility</label>
+      <select name="motionAccessibility" id="motion-accessibility">
+        <option value="">--Motion Access--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
+        <label for="signage">Accessible Signage</label>
+      <select name="signage" id="signage">
+        <option value="">--Signage--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
+        <label for="visual-ccessibility">Visual Accessibility</label>
+      <select name="visual" id="visual-accessibility">
+        <option value="">--Visual Access--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
+            <label for="hearing">Hearing Accessibility</label>
+      <select name="hearing" id="hearing">
+        <option value="">--Hearing Access--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
+            <label for="language">Language Accessibility</label>
+      <select name="language" id="language">
+        <option value="">--Language Access--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
+                <label for="cognitive">Cognitive Accessibility</label>
+      <select name="cognitive" id="cognitive">
+        <option value="">--Cognitive Access--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
+                <label for="wiFi">Wi-Fi</label>
+      <select name="wiFi" id="wiFi">
+        <option value="">--Wi-Fi--</option>
+        <option value = "Yes">Yes</option>
+        <option value = "No">No</option>
+    </select>
+
     <label for="station-comments">Comments and additional info</label>
-    <textarea required id="station-comments" name="comments" placeholder="Add additional info and comments here"></textarea>
+    <textarea required id="station-comments" name="comments" placeholder="Your comments"></textarea>
 
 
     <button>Submit Station Info</button>

@@ -13,14 +13,38 @@ stationRouter.get('/create', (req, res) => {
 stationRouter.post('/create', (req, res, next) => {
   console.log('get request', req.body, req.user_id);
   const creator = req.user._id;
-  const { name, address, stepFree, liftAvailable, gap, staffAvailable, comments } = req.body;
-  Station.create({
+  const {
+    transportType,
     name,
     address,
-    stepFree,
+    steps,
     liftAvailable,
     gap,
     staffAvailable,
+    motionAccessibility,
+    signage,
+    visual,
+    hearing,
+    language,
+    cognitive,
+    wiFi,
+    comments
+  } = req.body;
+  Station.create({
+    transportType,
+    name,
+    address,
+    steps,
+    liftAvailable,
+    gap,
+    staffAvailable,
+    motionAccessibility,
+    signage,
+    visual,
+    hearing,
+    language,
+    cognitive,
+    wiFi,
     comments,
     creator
   })

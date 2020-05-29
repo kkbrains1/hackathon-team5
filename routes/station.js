@@ -5,10 +5,14 @@ const express = require('express');
 
 const stationRouter = new express.Router();
 
-stationRouter.get('/create', (req, res, next) => {
+stationRouter.get('/create', (req) => {
+  console.log('get request', req.body);
+});
+
+/* stationRouter.get('/create', (req, res, next) => {
   console.log(req.body);
   res.render('station/create');
-});
+}); */
 
 
 /* stationRouter.get('/list', (req, res, next) => {

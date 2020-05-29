@@ -16,8 +16,6 @@ body {
   font-family: sans-serif;
   font-family: $font-sans;
   line-height: 2;
-  color: #ebf5ff;
-  background-color: #1c4c70;
 }
 
 a {
@@ -77,4 +75,31 @@ button,
 textarea {
   min-height: 8em;
   resize: vertical;
+}
+
+.logo {
+  text-align: center;
+}
+.about-project {
+  background-color: #1c4c70;
+  color: #ebf5ff;
+  font-size: 0.8em;
+}
+
+.mission {
+  font-size: 2.3em;
+  line-height: 1em;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
 }

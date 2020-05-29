@@ -5,8 +5,8 @@ const express = require('express');
 
 const stationRouter = new express.Router();
 
-stationRouter.get('/create', (req, res, next) => {
-  console.log(req.body);
+stationRouter.get('/create', (req, res) => {
+  console.log('get request', req.body);
   res.render('station/create');
 });
 

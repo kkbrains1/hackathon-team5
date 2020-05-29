@@ -10,6 +10,8 @@ $grey: hsla(0, 0, 75%, 0.5);
 }
 
 body {
+  background-color: #1c4c70;
+  color: #ebf5ff;
   max-width: 52em;
   padding: 0 1em;
   margin: 0 auto;
@@ -102,4 +104,16 @@ textarea {
   margin-top: 2em;
   margin-bottom: 2em;
   text-align: center;
+}
+
+.nav-bar {
+  color: #ebf5ff;
+  font-size: 0.84em;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #ebf5ff;
+  color: #1c4c70;
 }

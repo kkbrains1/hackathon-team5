@@ -1,1 +1,25 @@
-<h1>single station</h1>
+{{#with station}}
+<h1>{{name}}</h1>
+
+<ul>
+  <li>transportType {{transportType}}</li>
+  <li>address {{address}}</li>
+  <li>steps {{steps}}</li>
+  <li>liftAvailable {{liftAvailable}}</li>
+  <li>gap {{gap}}</li>
+  <li>staffAvailable {{staffAvailable}}</li>
+  <li>motionAccessibility {{motionAccessibility}}</li>
+  <li>signage {{signage}}</li>
+  <li>visual {{visual}}</li>
+  <li>hearing {{hearing}}</li>
+  <li>language {{language}}</li>
+  <li>cognitive {{cognitive}}</li>
+  <li>wiFi {{wiFi}}</li>
+  <li>comments {{comments}}</li>
+</ul>
+
+<small>Created by: {{creator}} </small> 
+
+
+
+{{/with}}

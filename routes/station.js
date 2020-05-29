@@ -1,16 +1,17 @@
 'use strict';
 
 const express = require('express');
+const routeGuard = require('./../middleware/route-guard');
 const Station = require('./../models/station');
 
 const stationRouter = new express.Router();
 
-stationRouter.get('/create', (req, res) => {
+stationRouter.get('/create', routeGuard, (req, res) => {
   console.log('get request', req.body);
   res.render('station/create');
 });
 
-stationRouter.post('/create', (req, res, next) => {
+stationRouter.post('/create', routeGuard, (req, res, next) => {
   console.log('get request', req.body, req.user_id);
   const creator = req.user._id;
   const {

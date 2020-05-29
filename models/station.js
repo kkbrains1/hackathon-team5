@@ -11,6 +11,21 @@ const stationSchema = new mongoose.Schema(
     address: {
       type: String
     },
+    stepFree: {
+      type: String
+    },
+    liftAvailable: {
+      type: String
+    },
+    gap: {
+      type: String
+    },
+    staffAvailable: {
+      type: String
+    },
+    comments: {
+      type: String
+    },
     creator: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,

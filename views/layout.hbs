@@ -15,13 +15,13 @@
     {{#if user}}
     <!-- <a href="/">{{user.name}}'s Profile</a> -->
     <form action="/authentication/sign-out" method="POST">
+      <a href="/station/create">Add a Station</a>
       <button>Sign Out</button>
     </form>
     {{else}}
     <a href="/authentication/sign-in">Sign In</a>
     <a href="/authentication/sign-up">Sign Up</a>
     {{/if}}
-    <a href="/station/create">Add a Station</a>
     <a href="/station/list">See all Stations</a>
   </nav>
   {{{body}}}

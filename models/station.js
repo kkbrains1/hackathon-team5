@@ -8,19 +8,6 @@ const stationSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    location: {
-      type: {
-        type: String,
-        default: 'Point'
-      },
-      coordinates: [
-        {
-          type: Number,
-          min: -180,
-          max: 180
-        }
-      ]
-    },
     address: {
       type: String
     },
@@ -38,8 +25,6 @@ const stationSchema = new mongoose.Schema(
   }
 );
 
-trainSchema.index({ location: '2dsphere' });
+const Station = mongoose.model('Station', stationSchema);
 
-const Train = mongoose.model('Event', trainSchema);
-
-module.exports = Train;
+module.exports = Station;
